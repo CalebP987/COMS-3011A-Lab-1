@@ -35,3 +35,13 @@ export interface ListTaskOptions {
   archived?: boolean;
   sortBy?: TaskSortOption;
 }
+
+export type TaskActionStatus =
+  | "idle"
+  | "success"
+  | "error";
+
+export interface TaskActionState {
+  status: TaskActionStatus;
+  message: string;
+}
