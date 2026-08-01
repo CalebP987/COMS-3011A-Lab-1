@@ -40,3 +40,5 @@ export {
   isValidDateString,
   TaskValidationError,
 } from "./validation";
+
+export { TaskNotFoundError } from "./repository";
