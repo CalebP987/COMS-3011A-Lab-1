@@ -41,4 +41,4 @@ This repository makes use of AI code generation using the following tools: ChatG
 
 This repository does not use AI in-line editing tools.
 
-This repository does not use AI code review.
+This repository makes use of AI code-review using the following tools: ChatGPT-Web[GPT-5.6 Thinking].
