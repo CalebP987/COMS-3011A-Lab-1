@@ -1,39 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+﻿# COMS3011A Lab 1 — Local Task Manager
 
-## Getting Started
+A local-first todo application built with Next.js and SQLite.
 
-First, run the development server:
+The application runs locally for a single user. It does not require user accounts or deployment.
 
-```bash
+## Features
+
+- Create tasks with a title, description, due date, topic and status.
+- Edit active tasks.
+- Archive tasks without deleting them.
+- View active and archived tasks separately.
+- Sort tasks by topic, status or due date.
+- Use the fixed statuses `Todo`, `In-Progress` and `Complete`.
+- Visually identify overdue incomplete tasks.
+- Persist task information after the application is restarted.
+
+## Quick Start
+
+### Requirements
+
+This project was developed and tested using:
+
+- Node.js `v24.13.1`
+- npm `11.8.0`
+
+### Install
+
+From the repository directory:
+
+~~~bash
+npm ci
+~~~
+
+### Run in Development
+
+~~~bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+~~~
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+~~~text
+http://localhost:3000
+~~~
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The SQLite database is created automatically when the application first runs.
 
-## Learn More
+### Run Tests
 
-To learn more about Next.js, take a look at the following resources:
+~~~bash
+npm test
+~~~
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Run a Production Build
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+~~~bash
+npm run build
+npm start
+~~~
 
-## Deploy on Vercel
+Open:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+~~~text
+http://localhost:3000
+~~~
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Documentation
+
+- [Project documentation](docs/documentation.md)
+- [AI usage records](ai/README.md)
 
 ## AI Usage
 
@@ -42,3 +77,7 @@ This repository makes use of AI code generation using the following tools: ChatG
 This repository does not use AI in-line editing tools.
 
 This repository makes use of AI code-review using the following tools: ChatGPT-Web[GPT-5.6 Thinking].
+
+## AI Declaration
+
+The preceding document was planned, generated, reviewed and edited with the assistance of ChatGPT-Web[GPT-5.6 Thinking].
